@@ -792,6 +792,10 @@ section.active {
 
     .home {
         padding: 0 5%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        text-align: center;
     }
 
     .home-detail h1 {
@@ -804,6 +808,27 @@ section.active {
 
     .home-detail p {
         font-size: 1.4rem;
+    }
+
+    .home-detail {
+        order: 2;
+        max-width: 62rem;
+    }
+
+    .home-detail .btn-sci {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .home-img {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .home-img .img-box {
+        width: clamp(20rem, 42vw, 30rem);
+        height: clamp(20rem, 42vw, 30rem);
     }
 
     .services-container {
